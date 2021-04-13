@@ -610,4 +610,13 @@ textarea {
     padding-left: 0px;
     padding-top: 64px;
   }
+
+ body {
+    width: max-content;
+  }
+
+  .about {
+    left: 0;
+    width: auto;
+  }
 }
