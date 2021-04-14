@@ -611,12 +611,105 @@ textarea {
     padding-top: 64px;
   }
 
- body {
-    width: max-content;
+  body {
+    width: fit-content;
   }
 
   .about {
     left: 0;
     width: auto;
+  }
+
+  h1 {
+    font-size: 345%;
+  }
+  .hero-text-box {
+    left: 15%;
+  }
+  .about-1 {
+    padding-top: 6vh;
+    font-size: 500%;
+  }
+
+  #about-div {
+    margin-left: 4vw;
+    width: 93%;
+  }
+
+  blockquote {
+    height: 7vh;
+    margin: 4vh 0;
+    margin-left: 5vw;
+  }
+
+  .about p {
+    font-size: 200%;
+
+    margin-left: 10vw;
+    width: 80%;
+  }
+
+  .container {
+    margin-left: 2vw;
+    width: 97%;
+  }
+
+  .company-details {
+    height: 15vh;
+  }
+  .company-name-EP {
+    margin-left: 10vw;
+    margin-top: 0vh;
+    font-size: 200%;
+  }
+
+  .company-name {
+    margin-left: 10vw;
+    margin-top: 0vh;
+    font-size: 200%;
+    width: 40%;
+  }
+
+  .position-name-EP {
+    float: left;
+    font-size: 150%;
+    margin-left: 10vw;
+  }
+
+  .position-name {
+    font-size: 150%;
+    margin-left: 10vw;
+    margin-top: 0.5vh;
+  }
+  .job-points {
+    margin-left: 6vw;
+    margin-top: 2vh;
+  }
+
+  .job-points li {
+    font-size: 180%;
+    margin-bottom: 2%;
+  }
+
+  h6 {
+    font-size: 150%;
+  }
+
+  .freelance-logo {
+    font-size: 5vh !important;
+  }
+
+  .position-name-1 {
+    font-size: 150%;
+    margin-left: 10vw;
+    margin-top: -0.5vh;
+  }
+
+  #freelance-details-div {
+    height: 13vh;
+  }
+
+  #freelance-name-div {
+    margin-left: 12vw;
   }
 }
