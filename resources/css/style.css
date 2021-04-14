@@ -712,4 +712,24 @@ textarea {
   #freelance-name-div {
     margin-left: 12vw;
   }
+.side-nav {
+    width: 100%;
+    position: fixed;
+    height: 12vh;
+    z-index: 10;
+    display: none;
+  }
+
+  .logo {
+    text-align: center;
+    font-size: 200%;
+  }
+
+  .sticky {
+    display: block;
+  }
+ header {
+height: 118vh;
+}
+
 }
