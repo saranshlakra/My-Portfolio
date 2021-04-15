@@ -8,7 +8,17 @@ $(document).ready(function () {
       }
     },
     {
-      offset: "10%",
+      offset: "8%",
     }
   );
+});
+
+var windowWidth = $(window).width();
+
+jQuery(document).ready(function ($) {
+  if (windowWidth < 992) {
+    $(".col-new").addClass("span2");
+  } else if (windowWidth > 993) {
+    $(".col-new").addClass("span-1-of-4");
+  }
 });
