@@ -399,6 +399,10 @@ h6 {
   overflow: hidden;
 }
 
+.form-label:first-child {
+  margin-top: 2%;
+}
+
 .row-for-3 {
   padding: 1em 2em;
 }
@@ -603,6 +607,11 @@ textarea {
     background: #fff;
     height: 64px;
     position: absolute;
+    width: 100%;
+    position: fixed;
+    height: 10vh;
+    z-index: 10;
+    display: none;
   }
 
   main {
@@ -627,7 +636,7 @@ textarea {
 
   header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.715), rgba(0, 0, 0, 0.6)),
-      url(img/Sara-mobile.jpg);
+      url(img/sara-mobile.jpg);
   }
 
   .hero-text-box {
@@ -719,13 +728,9 @@ textarea {
     margin-left: 12vw;
   }
 
-  .side-nav {
-    width: 100%;
-    position: fixed;
-    height: 10vh;
-    z-index: 10;
-    display: none;
-  }
+  /* .side-nav {
+    
+  } */
 
   .logo {
     text-align: center;
@@ -736,16 +741,8 @@ textarea {
     display: block;
   }
 
-  .media-html {
-    margin-left: 9vw !important;
-  }
-
-  .tech-icon {
-    margin-left: 7vw;
-  }
-
   #html {
-    margin-left: 9vw;
+    margin-left: 6vw;
   }
 
   .tech-skills-2 {
@@ -753,7 +750,7 @@ textarea {
   }
 
   .tech-heading {
-    font-size: 225%;
+    font-size: 300%;
     margin-left: 4vw;
   }
 
@@ -798,5 +795,62 @@ textarea {
 
   .contacts-icon {
     width: 12vw;
+  }
+  #technology-1,
+  #technology-2,
+  #technology-3,
+  #technology-4 {
+    font-size: 200%;
+    width: 24%;
+  }
+
+  .tech-skills-2 {
+    font-size: 200%;
+  }
+
+  .tech-icon {
+    width: 12vw !important;
+    margin-left: 7vw;
+  }
+  .media-html {
+    width: 9vw !important;
+    margin-left: 8vw !important;
+  }
+
+  .margin-left {
+    margin-left: 0 !important;
+  }
+
+  .project-info {
+    font-size: 150%;
+  }
+
+  .project-info span {
+    font-size: 165%;
+  }
+
+  .about-icon {
+    font-size: 100% !important;
+  }
+
+  .span-1-of-4 {
+    width: 23.8%;
+  }
+  .span2 {
+    margin-bottom: 2% !important;
+    width: 49.2% !important;
+  }
+
+  #react-icon {
+    padding-bottom: 1.2vh;
+  }
+
+  #btn-send {
+    width: 35%;
+  }
+
+  .form-fields {
+    margin-left: 2.5% !important;
+    width: 65% !important;
   }
 }
