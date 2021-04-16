@@ -19,7 +19,7 @@ $(document).ready(function () {
       $(".js-an-1").addClass("animate__animated animate__backInDown");
     },
     {
-      offset: "80%",
+      offset: "40%",
     }
   );
 
@@ -40,12 +40,12 @@ $(document).ready(function () {
     }
   );
 
-  $(".js-an-4").waypoint(
+  $(".js-an-4-1").waypoint(
     function () {
-      $(".js-an-4").addClass("animate__animated animate__backInDown");
+      $(".js-an-4-1").addClass("animate__animated animate__fadeInUp");
     },
     {
-      offset: "70%",
+      offset: "50%",
     }
   );
 

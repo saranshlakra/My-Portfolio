@@ -617,6 +617,20 @@ textarea {
   opacity: 1;
 }
 
+.js-an-5,
+.js-an-7 {
+  -webkit-animation-duration: 2s !important;
+  animation-duration: 2s !important;
+}
+
+.js-an-4-1 {
+  opacity: 0;
+}
+
+.js-an-4-1.animate__fadeInUp {
+  opacity: 1;
+}
+
 @media (max-width: 992px) {
   .side-nav {
     background: #fff;
