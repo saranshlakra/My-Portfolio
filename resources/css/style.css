@@ -602,6 +602,21 @@ textarea {
   font-weight: 400;
   margin-top: 3%;
 }
+
+.js-an-1,
+.js-an-2,
+.js-an-3,
+.js-an-4 {
+  opacity: 0;
+}
+
+.js-an-1.animate__backInDown,
+.js-an-2.animate__backInDown,
+.js-an-3.animate__backInDown,
+.js-an-4.animate__backInDown {
+  opacity: 1;
+}
+
 @media (max-width: 992px) {
   .side-nav {
     background: #fff;
@@ -636,7 +651,7 @@ textarea {
 
   header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.715), rgba(0, 0, 0, 0.6)),
-      url(img/Sara-mobile.jpg);
+      url(img/sara-mobile.jpg);
   }
 
   .hero-text-box {
