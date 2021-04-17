@@ -56,7 +56,7 @@ h3 {
 }
 
 .side-nav {
-  overflow: hidden;
+  /* overflow: hidden; */
   height: 100vh;
   position: fixed;
   float: left;
@@ -631,7 +631,14 @@ textarea {
   opacity: 1;
 }
 
+.nav-icon {
+  display: none !important;
+}
+
 @media (max-width: 992px) {
+  html {
+    scroll-padding-top: 10vh;
+  }
   .side-nav {
     background: #fff;
     height: 64px;
@@ -664,12 +671,13 @@ textarea {
   }
 
   header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.715), rgba(0, 0, 0, 0.6)),
-      url(img/Sara-mobile.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+      url(img/sara-mobile.jpg);
   }
 
   .hero-text-box {
-    left: 10%;
+    left: 5%;
+    top: 44%;
   }
   .about-1 {
     padding-top: 6vh;
@@ -757,19 +765,65 @@ textarea {
     margin-left: 12vw;
   }
 
-  /* .side-nav {
-    
-  } */
-
-  .logo {
-    text-align: center;
-    font-size: 200%;
+  .nav-icon {
+    float: right;
+    color: teal;
+    margin-top: 1vh;
+    margin-right: 2vw;
+    font-size: 6em !important;
   }
 
+  .nav-icon-0 {
+    display: none !important;
+  }
+
+  .nav-icon-1 {
+    display: block !important;
+  }
+
+  /* #name {
+    padding-left: 5%;
+  } */
+
+  #name h3 {
+    margin-left: 10vw;
+  }
+  .logo {
+    text-align: center;
+    font-size: 250%;
+    padding: 0 !important;
+  }
+
+  .nav-mobile {
+    width: 50%;
+    height: 120vh;
+
+    background: white;
+  }
+
+  .nav-mobile ul {
+    font-size: 300%;
+  }
+
+  .nav-mobile ul li {
+    padding-top: 4vh;
+    padding-left: 2vw;
+  }
+
+  .side-nav i {
+    top: 18px;
+  }
+
+  .nav-mobile ul li span {
+    padding-left: 4vw;
+  }
   .sticky {
     display: block;
   }
 
+  .hide-nav {
+    display: none !important;
+  }
   #html {
     margin-left: 6vw;
   }
@@ -881,5 +935,17 @@ textarea {
   .form-fields {
     margin-left: 2.5% !important;
     width: 65% !important;
+  }
+
+  .transparent {
+    width: 100% !important;
+    display: none;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 120vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 997;
+    will-change: opacity;
   }
 }

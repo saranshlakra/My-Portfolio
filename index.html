@@ -11,11 +11,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="other_resources/css/grid.css">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="/Projects/Website Project/Website project for git/My-Portfolio-main/resources/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="/Projects/Website Project/Website project for git/My-Portfolio-main/resources/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="/Projects/Website Project/Website project for git/My-Portfolio-main/resources/favicon/favicon-16x16.png">
+    <link rel="manifest"
+        href="/Projects/Website Project/Website project for git/My-Portfolio-main/resources/favicon/site.webmanifest">
+    <link rel="shortcut icon"
+        href="/Projects/Website Project/Website project for git/My-Portfolio-main/resources/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config"
         content="/Projects/Website Project/Website project for git/My-Portfolio-main/resources/favicon/browserconfig.xml">
@@ -27,7 +32,16 @@
 
 <body>
 
-    <nav class="side-nav box-shadow">
+    <nav class="side-nav sticky box-shadow">
+
+        <!-- <img class="materimgal-imgcons nav-icon"
+            src="/Projects/Website Project/Website project for git/My-Portfolio-main/nav-icon.svg"> -->
+        <i class="material-icons nav-icon check-icon-0 nav-icon-1">
+            menu
+        </i><i class="material-icons nav-icon check-icon-1 nav-icon-0 ">
+            close
+        </i>
+
         <ul>
 
             <li class="logo">
@@ -37,65 +51,73 @@
                     </h3>
                 </a>
             </li>
-            <li>
-                <a href="#about">
-                    <i class="material-icons about-icon">
-                        person
-                    </i><span>About</span>
-                </a>
-            </li>
-            <li>
-                <a href="#experience">
-                    <i class="material-icons experience-icon">
-                        work
-                    </i><span>Experience</span>
-                </a>
-            </li>
-            <li>
-                <a href="#skills">
-                    <i class="material-icons skill-icon">
-                        wb_incandescent
-                    </i><span>Skills</span>
-                </a>
-            </li>
-            <li>
-                <a href="#projects">
-                    <i class="material-icons project-icon">
-                        construction
-                    </i><span>Projects</span>
-                </a>
-            </li>
-            <li>
-                <a href="#education">
-                    <i class="material-icons education-icon">
-                        school
-                    </i><span>Education</span>
-                </a>
-            </li>
-            <li>
-                <a href="#hire">
-                    <i class="material-icons hire-icon">
-                        emoji_people
-                    </i><span>Hire</span>
-                </a>
-            </li>
-            <li>
-                <a href="#contact">
-                    <i class="material-icons contact-icon">
-                        contact_phone
-                    </i><span>Contact</span>
-                </a>
+        </ul>
+        <nav class=" transparent transparent1 ">
+            <nav class="nav-mobile ">
+                <ul>
+                    <li>
+                        <a href="#about">
+                            <i class="material-icons about-icon">
+                                person
+                            </i><span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experience">
+                            <i class="material-icons experience-icon">
+                                work
+                            </i><span>Experience</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills">
+                            <i class="material-icons skill-icon">
+                                wb_incandescent
+                            </i><span>Skills</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            <i class="material-icons project-icon">
+                                construction
+                            </i><span>Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#education">
+                            <i class="material-icons education-icon">
+                                school
+                            </i><span>Education</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#hire">
+                            <i class="material-icons hire-icon">
+                                emoji_people
+                            </i><span>Hire</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <i class="material-icons contact-icon">
+                                contact_phone
+                            </i><span>Contact</span>
+                        </a>
 
-            </li>
-            <li>
-                <a href="#">
-                    <i class="material-icons resume-icon">
-                        feed
-                    </i><span>Resume</span>
-                </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons resume-icon">
+                                feed
+                            </i><span>Resume</span>
+                        </a>
 
-            </li>
-            <div class="overlay"></div>
+                    </li>
+
+                </ul>
+            </nav>
+        </nav>
+        <div class="overlay"></div>
 
         </ul>
     </nav>
@@ -383,7 +405,7 @@
         <div class="row form-row" id="form">
             <!-- <div class="col span-1-of-2 box-shadow "> -->
             <h2 class="hire js-an-7">Hire me</h2>
-            <form action="https://usebasin.com/f/df040f11349d" method="POST">
+            <form action="mailer.php" method="POST">
                 <div class="row form-ele-row">
                     <div class="form-label col span-1-of-4">
                         <label for="">Name</label>
@@ -415,7 +437,6 @@
                     </div>
                     <div class="col span-2-of-4" id="send-btn">
                         <input type="submit" value="Send" id="btn-send">
-                        <!-- <h4 class="form11"> (Form sending functionality coming soon..)</h4> -->
                     </div>
 
                 </div>

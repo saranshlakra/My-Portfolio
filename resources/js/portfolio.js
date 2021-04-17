@@ -1,16 +1,16 @@
 $(document).ready(function () {
-  $(".js-class-feature").waypoint(
-    function (direction) {
-      if (direction == "down") {
-        $("nav").addClass("sticky");
-      } else {
-        $("nav").removeClass("sticky");
-      }
-    },
-    {
-      offset: "8%",
-    }
-  );
+  // $(".js-class-feature").waypoint(
+  //   function (direction) {
+  //     if (direction == "down") {
+  //       $("nav").addClass("sticky");
+  //     } else {
+  //       // $("nav").removeClass("sticky");
+  //     }
+  //   },
+  //   {
+  //     offset: "8%",
+  //   }
+  // );
 
   //-----------Animation--------------
 
@@ -84,6 +84,31 @@ $(document).ready(function () {
       offset: "50%",
     }
   );
+
+  $(".check-icon-0").click(function () {
+    $(".check-icon-0").addClass("nav-icon-0");
+    $(".check-icon-0").removeClass("nav-icon-1");
+    $(".check-icon-1").addClass("nav-icon-1");
+  });
+
+  $(".check-icon-1").click(function () {
+    $(".check-icon-1").addClass("nav-icon-0");
+    $(".check-icon-1").removeClass("nav-icon-1");
+    $(".check-icon-0").addClass("nav-icon-1");
+  });
+
+  $(".nav-icon").click(function () {
+    var nav = $(".transparent");
+
+    nav.slideToggle(200);
+    $(".transparent1").removeClass("hide-nav");
+  });
+  $(".transparent").click(function () {
+    $(".transparent").addClass("hide-nav");
+    $(".check-icon-1").addClass("nav-icon-0");
+    $(".check-icon-1").removeClass("nav-icon-1");
+    $(".check-icon-0").addClass("nav-icon-1");
+  });
 });
 
 var windowWidth = $(window).width();
