@@ -404,11 +404,16 @@ h6 {
 }
 
 .row-for-3 {
+  padding-bottom: 0 !important;
   padding: 1em 2em;
 }
 
 .project-info {
   margin: 1em;
+}
+
+.col-new {
+  height: 50vh;
 }
 
 .project-info span {
@@ -424,6 +429,10 @@ h6 {
 .project-img {
   width: 100%;
   cursor: pointer;
+}
+
+.bg {
+  height: 43%;
 }
 
 .education {
@@ -483,13 +492,13 @@ h6 {
 
 .project-img-container {
   opacity: 0.7;
-  transform: scale(1.2);
+  transform: scale(1);
   transition: transform 0.5s, opacity 0.3s;
 }
 
 .project-img-container:hover {
   opacity: 1;
-  transform: scale(1.06);
+  transform: scale(1.2);
 }
 
 .bg {
@@ -645,7 +654,7 @@ textarea {
     position: absolute;
     width: 100%;
     position: fixed;
-    height: 8vh;
+    height: 10vh;
     z-index: 10;
     display: none;
   }
@@ -828,6 +837,13 @@ textarea {
     margin-left: 6vw;
   }
 
+  .col-new {
+    height: 45vh;
+  }
+
+  .row-for-3 {
+    padding-bottom: 0 !important;
+  }
   .tech-skills-2 {
     width: 25vw;
   }
@@ -839,6 +855,10 @@ textarea {
 
   .project-info p {
     font-size: 165% !important;
+  }
+
+  .bg {
+    height: auto;
   }
 
   .edu-ul {
