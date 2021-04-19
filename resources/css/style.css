@@ -654,7 +654,7 @@ textarea {
     position: absolute;
     width: 100%;
     position: fixed;
-    height: 10vh;
+    height: 9vh;
     z-index: 10;
     display: none;
   }
@@ -936,6 +936,7 @@ textarea {
     width: 23.8%;
   }
   .span2 {
+    margin-left: 0 !important;
     margin-bottom: 2% !important;
   }
 
