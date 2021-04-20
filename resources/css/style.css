@@ -468,7 +468,7 @@ h6 {
   font-size: 130%;
   padding-top: 0.5em;
   margin-left: 0 !important;
-  width: auto !important;
+  width: 35vw !important;
 }
 .edu-address {
   color: #795548;
@@ -872,6 +872,7 @@ textarea {
   .edu {
     font-size: 270% !important;
     margin-left: 2% !important;
+    width: 94vw !important;
   }
   .edu-1 {
     width: 95% !important;
