@@ -873,7 +873,7 @@ textarea {
   }
 
   .col-new {
-    height: 54vh;
+    /* height: 54vh; */
     margin: 0 !important;
   }
 
