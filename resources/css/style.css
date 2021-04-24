@@ -873,7 +873,8 @@ textarea {
   }
 
   .col-new {
-    height: 45vh;
+    height: 54vh;
+    margin: 0 !important;
   }
 
   .row-for-3 {
@@ -1028,9 +1029,5 @@ textarea {
 
   .download a {
     text-align: center !important;
-  }
-
-  .col {
-    margin: 0 !important;
   }
 }
