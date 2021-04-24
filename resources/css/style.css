@@ -198,9 +198,10 @@ h2 {
 }
 
 .about p {
+  text-align: justify;
   line-height: 1.5em;
   margin-left: 2vw;
-  width: 75vw;
+  width: 72vw;
   word-spacing: 2px;
 }
 
