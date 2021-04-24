@@ -685,11 +685,11 @@ textarea {
   }
   .side-nav {
     background: #fff;
-    height: 64px;
+    /* height: 64px; */
     position: absolute;
     width: 100%;
     position: fixed;
-    height: 10vh;
+    height: 9vh;
     z-index: 10;
     display: none;
   }
