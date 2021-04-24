@@ -976,7 +976,7 @@ textarea {
   }
   .span2 {
     margin-bottom: 2% !important;
-    width: 49.2% !important;
+    /* width: 49.2% !important; */
   }
 
   #react-icon {
@@ -1030,4 +1030,7 @@ textarea {
     text-align: center !important;
   }
 
+  .col {
+    margin: 0 !important;
+  }
 }
