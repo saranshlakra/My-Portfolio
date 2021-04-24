@@ -1003,4 +1003,31 @@ textarea {
     z-index: 997;
     will-change: opacity;
   }
+
+  .download {
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  .resume {
+    height: 106vh;
+  }
+
+  .download img {
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 4%;
+  }
+
+  .jpeg,
+  .pdf {
+    border-radius: 20px !important;
+    height: 8vh;
+    font-size: 300%;
+  }
+
+  .download a {
+    text-align: center !important;
+  }
+
 }
