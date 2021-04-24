@@ -198,11 +198,9 @@ h2 {
 }
 
 .about p {
-  text-align: justify;
   line-height: 1.5em;
   margin-left: 2vw;
-  margin-right: 2vw;
-  width: auto;
+  width: 75vw;
   word-spacing: 2px;
 }
 
@@ -468,7 +466,7 @@ h6 {
   font-size: 130%;
   padding-top: 0.5em;
   margin-left: 0 !important;
-  width: 35vw !important;
+  width: auto !important;
 }
 .edu-address {
   color: #795548;
@@ -614,6 +612,40 @@ textarea {
   margin-top: 3%;
 }
 
+#contact {
+  margin-bottom: 0 !important;
+}
+
+.download {
+  margin-top: 15%;
+  margin-left: 10%;
+  display: inline-block;
+  width: 38%;
+}
+
+.resume {
+  height: 100vh;
+  margin-bottom: 0;
+}
+
+.jpeg,
+.pdf {
+  width: 80% !important;
+  border-radius: 4px !important;
+}
+
+.download img {
+  width: 30%;
+  margin-left: 25%;
+  margin-bottom: 4%;
+}
+
+.jpeg:hover,
+.pdf:hover {
+  opacity: 1;
+  transform: scale(1.2) !important;
+}
+
 .js-an-1,
 .js-an-2,
 .js-an-3,
@@ -656,7 +688,7 @@ textarea {
     position: absolute;
     width: 100%;
     position: fixed;
-    height: 9vh;
+    height: 10vh;
     z-index: 10;
     display: none;
   }
@@ -839,6 +871,10 @@ textarea {
     margin-left: 6vw;
   }
 
+  .col-new {
+    height: 45vh;
+  }
+
   .row-for-3 {
     padding-bottom: 0 !important;
   }
@@ -872,7 +908,6 @@ textarea {
   .edu {
     font-size: 270% !important;
     margin-left: 2% !important;
-    width: 94vw !important;
   }
   .edu-1 {
     width: 95% !important;
@@ -939,8 +974,8 @@ textarea {
     width: 23.8%;
   }
   .span2 {
-    margin-left: 0 !important;
     margin-bottom: 2% !important;
+    width: 49.2% !important;
   }
 
   #react-icon {
