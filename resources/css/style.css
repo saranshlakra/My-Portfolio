@@ -667,6 +667,24 @@ textarea {
   animation-duration: 2s !important;
 }
 
+.js-an-9,
+.js-an-10 {
+  -webkit-animation: infinite;
+  animation: infinite;
+  -webkit-animation-duration: 3s !important;
+  animation-duration: 3s !important;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.js-an-11 {
+  -webkit-animation: infinite;
+  animation: infinite;
+  -webkit-animation-duration: 2s !important;
+  animation-duration: 2s !important;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
 .js-an-4-1 {
   opacity: 0;
 }
@@ -873,7 +891,7 @@ textarea {
   }
 
   .col-new {
-    /* height: 54vh; */
+    /* height: 45vh; */
     margin: 0 !important;
   }
 
@@ -1029,5 +1047,9 @@ textarea {
 
   .download a {
     text-align: center !important;
+  }
+
+  .no-a-style {
+    font-size: 200%;
   }
 }

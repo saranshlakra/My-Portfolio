@@ -84,6 +84,30 @@ $(document).ready(function () {
       offset: "50%",
     }
   );
+  $(".js-an-9").waypoint(
+    function () {
+      $(".js-an-9").addClass("animate__animated animate__swing");
+    },
+    {
+      offset: "50%",
+    }
+  );
+  $(".js-an-10").waypoint(
+    function () {
+      $(".js-an-10").addClass("animate__animated animate__tada");
+    },
+    {
+      offset: "50%",
+    }
+  );
+  $(".js-an-11").waypoint(
+    function () {
+      $(".js-an-11").addClass("animate__animated animate__tada");
+    },
+    {
+      offset: "50%",
+    }
+  );
 
   $(".check-icon-0").click(function () {
     $(".check-icon-0").addClass("nav-icon-0");
