@@ -97,7 +97,7 @@ $(document).ready(function () {
       $(".js-an-10").addClass("animate__animated animate__tada");
     },
     {
-      offset: "50%",
+      offset: "70%",
     }
   );
   $(".js-an-11").waypoint(
