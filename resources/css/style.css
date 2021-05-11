@@ -673,16 +673,16 @@ textarea {
   animation: infinite;
   -webkit-animation-duration: 3s !important;
   animation-duration: 3s !important;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 .js-an-11 {
   -webkit-animation: infinite;
   animation: infinite;
   -webkit-animation-duration: 2s !important;
   animation-duration: 2s !important;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 .js-an-4-1 {
