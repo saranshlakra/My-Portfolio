@@ -433,7 +433,7 @@ h6 {
 }
 
 .bg {
-  height: 43%;
+  height: auto;
 }
 
 .education {
@@ -681,8 +681,8 @@ textarea {
   animation: infinite;
   -webkit-animation-duration: 2s !important;
   animation-duration: 2s !important;
-  -webkit-animation-delay: 1.5s;
-  animation-delay: 1.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .js-an-4-1 {
