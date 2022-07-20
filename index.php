@@ -27,6 +27,72 @@
 <body>
 
     <!-- php and make it index.php -->
+<?php
+// connecting to db
+    $connect = mysqli_connect( 
+    "localhost", 
+    "root", 
+    "", 
+    "cms_portfolio" 
+);
+
+// getting table data using sql query
+$query = 'SELECT *
+FROM about
+ORDER BY tagline DESC';
+
+$experience_query = 'SELECT *
+FROM experience
+ORDER BY company_name DESC';
+
+$skills_query = 'SELECT *
+FROM skills
+ORDER BY title DESC';
+
+$education_query = 'SELECT *
+FROM education
+ORDER BY instituename DESC';
+
+$result = mysqli_query($connect, $query);
+$result_exp = mysqli_query($connect, $experience_query);
+$result_skills = mysqli_query($connect, $skills_query);
+$result_edu = mysqli_query($connect, $education_query);
+
+
+while($record = mysqli_fetch_assoc($result)){
+    $photo =  '<img src="'.$record["photo"].'" alt="Weapon photo 1">';
+    $tagline = $record["tagline"];
+    $description = $record["description"];
+
+}
+
+while($record_exp = mysqli_fetch_assoc($result_exp)){
+   
+    $company_name = $record_exp["company_name"];
+    $position = $record_exp["position"];
+    $job_role = $record_exp["job_role"];
+    $start_date = $record_exp["start_date"];
+    $end_date = $record_exp["end_date"];    
+    $photo = $record_exp["photo"];
+
+}
+
+while($record_skills = mysqli_fetch_assoc($result_skills)){
+   
+    $title = $record_skills["title"];
+    $photo = $record_skills["photo"];
+    // $level = $record_skills["level"]; future use
+    
+}
+
+while($record_edu = mysqli_fetch_assoc($result_edu)){
+   
+    $title = $record_edu["instituename"];
+    $photo = $record_edu["degree"];
+    // $level = $record_skills["level"]; future use
+    
+}
+?>
 
     <nav class="side-nav sticky box-shadow">
 
@@ -137,16 +203,11 @@
         <div class="box-shadow js-an-1" id="about-div">
             <blockquote>
                 <h2>
-                    Front End Developer who focuses on writing clean, elegant and efficient code.
+               <?php echo $tagline ?>
                 </h2>
             </blockquote>
 
-            <p>I am a B. Tech (Computer Science & Engineering) graduate with a work experience as a web designer and
-                technical assistant. My hobbies involve designing and flying drones. I also have project management
-                skills and good ability to work independently or as part of a team and finishing the projects within the
-                proposed timeline. I have the objective to work with an organization where I can constantly learn new
-                technologies and improvise my technical and management skills and thereby, bring significant value to
-                the organization.</p>
+            <p> <?php echo $description ?></p>
         </div>
     </section>
 
@@ -159,21 +220,23 @@
                         <a href="#" id="comp-1-logo"></a>
                     </div>
                     <div class="company-name-EP">
-                        <h2>EP Electronic Paradise Pvt Ltd</h2>
+                        <h2>
+                        <?php echo $company_name ?>
+                        </h2>
                     </div>
                     <div class="position-name-EP">
 
-                        <h2 class="position-font">Technical Support Engineer</h2>
+                        <h2 class="position-font"><?php echo $position ?></h2>
 
                     </div>
                 </div>
 
                 <ul class="job-points">
-                    <li>Configuring operating systems, other softwares, and website maintenance</li>
-                    <li>Monitoring website performance and rectifying front-end related issues</li>
-                    <li>Troubleshooting network and hardware faults</li>
+                    <li><?php echo $job_role ?></li>
+                    <!-- <li>Monitoring website performance and rectifying front-end related issues</li>
+                    <li>Troubleshooting network and hardware faults</li> -->
                 </ul>
-                <h6>January 2021 - Present</h6>
+                <h6><?php echo $start_date ?> - <?php echo $end_date ?></h6>
             </div>
             <div class="exp-1 box-shadow js-an-3">
                 <div class="company-details">
@@ -240,7 +303,8 @@
 
                 <div id="technology-1" class="js-an-5">
 
-                    <img alt src="html.svg" class="tech-icon media-html" id="html">HTML
+                    <img alt src="html.svg" class="tech-icon media-html" id="html">
+                    <?php echo $title ?>
                 </div>
                 <div id="technology-2" class="js-an-5">
                     <img alt src="css3.svg" class="tech-icon">
@@ -443,7 +507,7 @@
 
         <div class="row edu-row" id="edu1">
             <div class="col span-1-of-2 box-shadow edu-1">
-                <p class="edu">Manav Rachna International University</p>
+                <p class="edu"><?php echo $instituename ?></p>
                 <span class="edu-address">Faridabad, Haryana</span>
                 <ul class="edu-ul">
                     <li>B.Tech in Computer Science & Engineering</li>
@@ -551,13 +615,13 @@
         <h2 class="about-1">RESUME</h2>
         <div class="download">
             <img class="js-an-9" src="jpeg.svg" alt="Resume JPEG format">
-            <a href=" add resume here" download> <input type="submit" class='jpeg' value="Hi! &#128512; I am Mr. Jpeg"
+            <a href=" add resume jpeg path here" download> <input type="submit" class='jpeg' value="Hi! &#128512; I am Mr. Jpeg"
                     id="btn-send">
             </a>
         </div>
         <div class="download">
             <img class="js-an-10" src="pdf.svg" alt="Resume PDF format">
-            <a href=" add resume here " download>
+            <a href="resources/Resume_Saransh.pdf" download>
                 <input type="submit" class='pdf' value="Hey! &#128513; I'm  Mr. Pdf" id="btn-send"> </a>
         </div>
 
